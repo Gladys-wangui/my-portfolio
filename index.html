@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gladys Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="profile_picture.jpeg" alt="Gladys Wangui Githinji">
+            <h1>GLADYS WANGUI GITHINJI</h1>
+            <p>Python Developer</p>
+            <button class="btn" id="capstone-btn">Capstone project</button>
+            <div id="documents-container"></div>
+        </div>
+        </div>
+        <div class="info">
+            <h1>ABOUT ME</h1>
+            <p>Hello, my name is Gladys Wangui Githinji. I'm 22 years old, from NYERI, Kenya. I am a Python developer.</p>
+            <ul>
+                <li><strong>Name:</strong> Gladys Wangui Githinji</li>
+                <li><strong>Birthday:</strong> 13 Jul 2001</li>
+                <li><strong>Experience:</strong> 2 Years</li>
+                <li><strong>Phone:</strong> 0715753094</li>
+                <li><strong>Email:</strong> wanguig571@gmail.com</li>
+                <li><strong>Freelance:</strong> Available</li>
+            </ul>
+            <a href="https://www.linkedin.com/in/gladys-wangui-843525256" class="hire-me" target="_blank">Hire Me</a>
+            <a href="Wangui cv.pdf" class="resume" target="_blank">My Resume</a>
+        </div>
+        <div class="contact">
+            <h2>CONTACT ME</h2>
+            <p>Feel free to get in touch with me for any inquiries or project opportunities.</p>
+            <ul>
+                <li><strong>Email:</strong> wanguig571@gmail.com</li>
+                <li><strong>Phone:</strong> 0715753094</li>
+                <li>
+                    <strong>Social Media:</strong>
+                    <ul>
+                        <li><a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"><img src="facebook_logo.png" alt="Facebook"></a></li>
+                        <li><a href="https://www.instagram.com/your-instagram-profile" target="_blank"><img src="instagram_logo.png" alt="Instagram"></a></li>
+                        <li><a href="https://www.linkedin.com/in/gladys-wangui-843525256" target="_blank"><img src="linkedin_logo.png" alt="LinkedIn"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="services">
+            <h3>MY SERVICES</h3>
+            <div class="service-column">
+                <div class="service">
+                    <h3>COMPUTER NETWORKING</h3>
+                    <p>Better Connection. Better Connection.</p>
+                    <a href="#" class="btn hire">Hire Me</a>
+                </div>
+                <div class="service">
+                    <h3>MACHINE LEARNING</h3>
+                    <p>Data-driven Decisions: Let Machine Learning Lead.</p>
+                    <a href="#" class="btn hire">Hire Me</a>
+                </div>
+                <div class="service">
+                    <h3>PYTHON DEVELOPMENT</h3>
+                    <p>From Ideas to Implementation: Python Paves the Way.</p>
+                    <a href="#" class="btn hire">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Array of file paths or URLs
+        const files = [
+            { name: 'Aspect of African Culture', url: 'Aspect of African Culture powerpoint presentation.pdf' },
+            { name: 'Gender awareness in the African society', url: 'gender presentation.pdf' },
+            { name: 'Capstone Project 3', url: 'links.pdf' },
+            { name: 'Photographic Essay', url: 'Photographic essay.pdf' },
+            { name: 'Autobiographical Essay', url: 'wangui autobiography.pdf' },
+            { name: 'Resume(English)', url: 'Wangui cv.pdf' },
+            { name: 'Resume(Swahili)', url: 'wasifu.pdf' },
+            // Add more file paths or URLs as needed
+        ];
+
+        // Get the capstone button element
+        const capstoneBtn = document.getElementById('capstone-btn');
+
+        // Function to create a list of document links
+        function createDocumentList() {
+            // Create an unordered list element
+            const ul = document.createElement('ul');
+
+            // Loop through the files array and create list items with anchor tags
+            files.forEach(file => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.textContent = file.name;
+                a.href = file.url;
+                a.target = '_blank'; // Open link in new tab
+                li.appendChild(a);
+                ul.appendChild(li);
+            });
+
+            // Append the list to the documents container
+            const documentsContainer = document.getElementById('documents-container');
+            documentsContainer.appendChild(ul);
+        }
+
+        // Add click event listener to the capstone button
+        capstoneBtn.addEventListener('click', function(event) {
+            // Prevent default behavior of button
+            event.preventDefault();
+
+            // Create and display the list of document links
+            createDocumentList();
+        });
+    </script>
+</body>
+</html>
+

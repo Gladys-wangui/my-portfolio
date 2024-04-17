@@ -1,0 +1,161 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 50;
+  padding: 50;
+  background-color: #f7f7f7; /* Light gray background */
+}
+
+.container {
+  max-width: 800px;
+  margin: 10px auto; /* Reduced margin */
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.profile h1 {
+  margin: 0;
+  color: #ff6f61; /* Bright red heading */
+  font-size: 24px;
+}
+
+.profile p {
+  color: #4ecdc4; /* Bright turquoise text */
+  font-size: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffa600; /* Bright orange button */
+  color: #ffffff; /* White text */
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.hire-me {
+  margin-right: 10px; /* Add margin between Hire Me and My Resume */
+}
+
+.info {
+  margin-top: 30px; /* Reduced margin */
+}
+
+.services {
+  margin-top: 30px; /* Reduced margin */
+}
+
+.service-column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service {
+  width: 30%; /* Adjust width of each service */
+  text-align: center;
+  margin-bottom: 20px; /* Reduced margin */
+}
+
+.service h3 {
+  margin-top: 0;
+  color: #ff6f61; /* Bright red heading */
+  font-size: 20px;
+  background-color: #4ecdc4; /* Bright turquoise background */
+  padding: 10px; /* Add padding */
+  border-radius: 5px; /* Add border radius */
+}
+
+.service p {
+  color: #ffa600; /* Bright orange text */
+  font-size: 16px;
+}
+
+.contact {
+  margin-top: 30px; /* Reduced margin */
+}
+
+.contact h2 {
+  color: #ff6f61; /* Bright red heading */
+}
+
+.contact h1 {
+  color: #ff6f61; /* Bright red heading */
+}
+
+.contact h3 {
+  color: #ff6f61; /* Bright red heading */
+}
+
+.contact p {
+  color: #4ecdc4; /* Bright turquoise text */
+  font-size: 16px;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact li {
+  margin-bottom: 10px;
+}
+
+.contact ul ul {
+  display: flex;
+  justify-content: left; /* Center align the logos */
+  margin-top: 10px; /* Add margin on top of the logos */
+}
+
+.contact ul ul li {
+  margin-right: 20px; /* Add spacing between logos */
+}
+
+.contact ul ul li img {
+  width: 20px; /* Set the width of the logos */
+  height: 20px; /* Set the height of the logos */
+}
+
+/* Add these CSS rules to your existing stylesheet */
+
+/* Container for the list of documents */
+#documents-container {
+  margin-top: 20px; /* Add margin above the document list */
+}
+
+/* Style for the document list */
+#documents-container ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+}
+
+#documents-container li {
+  margin-bottom: 10px; /* Add margin between each document */
+}
+
+#documents-container a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333333; /* Dark text color */
+  font-size: 16px; /* Font size */
+  display: block; /* Make links block-level elements for better spacing */
+  padding: 5px; /* Add padding to links */
+  background-color: #f0f0f0; /* Light gray background for links */
+  border-radius: 5px; /* Add border radius to links */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+#documents-container a:hover {
+  background-color: #dddddd; /* Darker gray background on hover */
+}
